@@ -1,0 +1,52 @@
+.container {
+  background: #fff;
+  padding: 0 10px;
+  font-family: 'Inter';
+
+  .namePage {
+    padding: 3px 0;
+    border-bottom: 1px solid #CFCFCF;
+
+    span {
+      padding: 7.5px 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .infoField {
+    padding: 5px 10px;
+    background: #F5F5F5;
+    margin-top: 10px;
+
+    span {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .groupBoxList {
+    margin: 10px 10px 0;
+    padding: 0 5px 0 0;
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+  }
+
+  .bottom {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+
+    div {
+      flex: 1;
+    }
+  }
+}

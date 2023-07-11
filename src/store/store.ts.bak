@@ -1,0 +1,35 @@
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import { authService } from "../services/authService";
+import { groupService } from "../services/groupService";
+import reducers from "./reducers";
+import {batchClassService} from '../services/batchClassService';
+import {batchService} from '../services/batchService';
+import { pageService } from '../services/pageService';
+import { documentService } from '../services/documentService';
+import { folderService } from '../services/folderService';
+import { commentService } from '../services/commentService';
+
+
+const rootReducer = combineReducers(reducers)
+
+export const setupStore = () => {
+    return configureStore({
+        reducer: rootReducer,
+        middleware: (getDefaultMiddleware) =>
+            getDefaultMiddleware()
+            .concat(
+                authService.middleware,
+                groupService.middleware,
+                batchClassService.middleware,
+                batchService.middleware,
+                pageService.middleware,
+                documentService.middleware,
+                folderService.middleware,
+                commentService.middleware
+            )
+    })
+}
+
+export type RootState = ReturnType<typeof rootReducer>
+export type AppStore = ReturnType<typeof setupStore>
+export type AppDispatch = AppStore['dispatch']

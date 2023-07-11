@@ -1,0 +1,67 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(./assets/fonts/Inter-Bold.ttf);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2126B2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body #auth .ant-form-item-label {
+  margin-bottom: -17px !important;
+}
+
+.ant-form-item-label>label {
+  z-index: 3;
+  background: #fff;
+  margin-left: 7px !important;
+  padding: 0 5px;
+  font-size: 11px !important;
+  line-height: 14px;
+  border-radius: 3px;
+}
+
+.ant-form-item-label>label::before {
+  font-size: 11px !important;
+}
+
+.ant-form-item {
+  margin-bottom: 10px;
+}
+
+.mt-05{
+  margin-top: .5rem;
+}
+
+.mt-1{
+  margin-top: 1rem;
+}

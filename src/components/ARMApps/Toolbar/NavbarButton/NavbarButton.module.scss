@@ -1,0 +1,62 @@
+.NavbarButton {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 0px;
+    color: #4C4C4C;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    
+    cursor: pointer;
+
+    &:hover {
+        .icon_wrapper svg path{
+            stroke: #2e33b7; 
+        }
+    }
+
+    &:active {
+        background: #4c4c4c07;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
+    .button_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon_wrapper {
+        justify-content: center;
+        display: flex;
+
+        svg {
+            width: 32px;
+            height: 32px;
+            stroke: #4C4C4C;
+            // path{
+            //     fill: #4C4C4C;
+            // }
+        }
+    }
+
+    .label {
+        font-size: 11px;
+        line-height: 12px;
+        font-style: normal;
+        font-weight: 400;
+        display: flex;
+        color: #4C4C4C;
+        height: 30px;
+        align-items: center;
+
+
+        @media (max-width: 1050px) {
+            display: none;
+        }
+    }
+
+}

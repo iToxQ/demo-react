@@ -1,0 +1,39 @@
+.row {
+  //background: #f5f5f5;
+  border-left: 1px solid #cfcfcf;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.topPanel {
+  padding: 3px 10px;
+  border-bottom: 1px solid #cfcfcf;
+  display: flex;
+  column-gap: 10px;
+
+  button {
+    width: 25px !important;
+  }
+
+  .leftButtons {
+
+  }
+
+  .rightButtons {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.details {
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+}

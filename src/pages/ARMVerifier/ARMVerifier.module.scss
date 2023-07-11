@@ -1,0 +1,29 @@
+.ARMVerifier {
+  flex: 1;
+  min-width: 600px;
+  position: relative;
+  display: flex;
+
+  .hr {
+    width: 2px;
+    background: #dedede;
+    cursor: col-resize;
+    border-bottom: 0;
+    border-top: 0;
+    height: auto;
+  }
+
+  .verificationPanel {
+    width: 655px;
+    background: #fff;
+    min-width: 300px;
+    overflow: hidden;
+  }
+
+  .rightBlock {
+    flex: 1;
+    min-width: 400px;
+    position: relative;
+  }
+}
+

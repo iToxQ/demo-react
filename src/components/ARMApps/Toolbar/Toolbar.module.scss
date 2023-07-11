@@ -1,0 +1,17 @@
+.Navbar__panel {
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid #CFCFCF;
+    user-select: none;
+  }
+  
+  .Navbar__panel_left {
+    display: flex;
+    column-gap: 2px;
+  }
+  
+  .Navbar__panel_right {
+    width: 100%;
+    flex-grow: 1;
+  }
+  

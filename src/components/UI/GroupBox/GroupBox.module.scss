@@ -1,0 +1,66 @@
+$borderRadius: 8px;
+
+.container {
+  background: #f5f5f5;
+  padding: 2.5px 5px;
+
+  &.start {
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
+    padding-top: 5px;
+  }
+  &.end {
+    border-bottom-left-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+    padding-bottom: 5px
+  }
+
+  .wrapper {
+    background: #fff;
+    border-radius: $borderRadius;
+    padding: 10px;
+  }
+
+  .title {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+
+  .content {
+    padding-left: 25px;
+  }
+}
+
+.containerCollapsible {
+  background: #f5f5f5;
+  padding: 5px;
+  border-radius: 5px;
+
+  .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+  }
+
+  .content {
+    background: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .collapsible {
+
+  }
+}

@@ -1,0 +1,53 @@
+$p: hsl(213deg 85% 97%);
+$s: hsl(233deg 36% 38%);
+
+body.appPage {
+	user-select: none;
+	overflow-y: hidden;
+	display: flex;
+	height: 100vh;
+	background-image: url("../../assets/bg.png");
+	background-color: #e9ecf0;
+	background-repeat: repeat;
+
+	// test
+	// background-image: url("../../assets/layoutDummy.png");
+	// background-position: 0 -76px;
+
+	#root {
+		display: flex;
+		flex-grow: 1;
+	}
+}
+
+
+.App {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* ANT FIXES */
+
+.ant-menu-horizontal {
+	line-height: 39px !important;
+}
+
+.ant-space-item {
+	display: flex;
+}
+
+.ant-btn {
+	padding: 4px 10px;
+}
+
+.ant-tree-node-content-wrapper{
+	display: flex;
+    align-items: center;
+}
+
+body
+.ant-tree
+.ant-tree-node-content-wrapper .ant-tree-iconEle{
+	display: flex;
+    align-items: center;
+}

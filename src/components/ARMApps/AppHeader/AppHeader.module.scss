@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #CFCFCF;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  padding: 0 10px;
+    
+    svg {
+      display: block;
+    }
+}
+
+.headerLeft{
+  display: flex;
+  align-items: center;
+}
+.headerRight{
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  column-gap: 15px;
+}
+
+.selectProject {
+  width: 200px;
+
+  button{
+    width: 200px;
+
+    > div{
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

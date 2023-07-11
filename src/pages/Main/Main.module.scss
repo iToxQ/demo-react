@@ -1,0 +1,68 @@
+.App {
+	display: flex;
+	flex-flow: column;
+	flex-grow: 1;
+	user-select: none;
+	height: 100vh;
+	width: 100vw;
+
+	.panels {
+		flex: 1;
+		display: flex;
+		overflow: hidden;
+
+	}
+
+	.leftPanel {
+		width: 20%;
+		background: #fff;
+		min-width: 300px;
+		overflow: hidden;
+	}
+
+	.ARMScanner {
+		flex: 1;
+		min-width: 600px;
+		position: relative;
+		display: flex;
+
+		.centerPanel {
+			flex: 1;
+			min-width: 400px;
+			position: relative;
+		}
+
+		.rightPanel {
+			width: 20%;
+			background: #fff;
+			min-width: 200px;
+			overflow: auto;
+		}
+	}
+
+	.hr {
+		width: 2px;
+		background: #dedede;
+		cursor: col-resize;
+		border-bottom: 0;
+		border-top: 0;
+		height: auto;
+	}
+}
+
+.loading {
+	position: absolute;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: #F5F5F5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	:global(.ant-spin) {
+		height: auto;
+	}
+}

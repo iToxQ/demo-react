@@ -1,0 +1,19 @@
+.NavbarGroup__group {
+    border-right: 1px solid #CFCFCF;;
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .NavbarGroup__button_list {
+    display: flex;
+    column-gap: 2px;
+    padding: 0 2px;
+    margin-bottom: 2px;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .NavbarGroup__name {
+    text-align: center;
+    font-size: 12px;
+  }

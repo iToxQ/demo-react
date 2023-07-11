@@ -1,0 +1,20 @@
+.priority {
+    margin-left: 10px;
+
+    :global(.ant-row.ant-form-item-row) {
+        column-gap: 10px;
+    }
+}
+
+.classAndPriority {
+    display: flex;
+}
+
+.batchFields {
+    overflow-y: auto;
+    max-height: 250px;
+
+    :global(.ant-col.ant-form-item-control) {
+        margin-right: 10px;
+    }
+}
